@@ -1,0 +1,32 @@
+// Continuous time Markov chains
+ctmc
+
+// initial count of the healthy individuals
+const int init_z = 95;
+// initial count of the infected individuals
+const int init_n = 5;
+// initial count of the healed individuals
+const int init_u = 0;
+// overall count of the individuals in the population
+const int sum_individuals = init_z + init_n + init_u;
+
+// rate of the infection - k_i \in [0.001, 0.011]
+const double k_i;
+// rate of the healing - k_r \in [0.01, 0.11]
+const double k_r;
+
+// Transition rates according to Mass action kinetics
+formula r_i = z * n * k_i;
+formula r_r = n * k_r;
+
+module cov20
+   z: [0..sum_individuals] init init_z; // healthy individuals
+   n: [0..sum_individuals] init init_n; // infected individals  
+   u: [0..sum_individuals] init init_u; // healed individuals
+
+   // Z + N -> (|Z| * |N| * k_i) N + N 
+   [] (z > 0) & (n > 0) & (n < sum_individuals) -> r_i : (z'=z-1) & (n'=n+1);
+   // N -> (|N| * k_r) U
+   [] (n > 0) & (u < sum_individuals) -> r_r : (u'=u+1) & (n'=n-1);
+endmodule
+

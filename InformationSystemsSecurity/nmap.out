@@ -1,0 +1,55 @@
+Nmap scan report for 192.168.122.1
+Host is up (0.00067s latency).
+Not shown: 65533 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+53/tcp open  domain
+
+Nmap scan report for s2 (192.168.122.5)
+Host is up (0.0031s latency).
+Not shown: 65534 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap scan report for s5 (192.168.122.36)
+Host is up (0.0032s latency).
+Not shown: 65531 closed ports
+PORT    STATE SERVICE
+21/tcp  open  ftp
+22/tcp  open  ssh
+111/tcp open  rpcbind
+613/tcp open  hmmp-op
+
+Nmap scan report for s3 (192.168.122.55)
+Host is up (0.00078s latency).
+Not shown: 65534 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap scan report for xstupi00 (192.168.122.165)
+Host is up (0.00087s latency).
+Not shown: 65534 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap scan report for s4 (192.168.122.211)
+Host is up (0.0021s latency).
+Not shown: 65532 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+3306/tcp open  mysql
+
+Nmap scan report for s1 (192.168.122.234)
+Host is up (0.0025s latency).
+Not shown: 65530 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+111/tcp open  rpcbind
+887/tcp open  iclcnet_svinfo
+888/tcp open  accessbuilder
+
+Nmap done: 256 IP addresses (7 hosts up) scanned in 65618.41 seconds
+
+ATA SPO ARR IBR ENS UGN OAR DNE ANE UUA NGI LHR U

@@ -1,0 +1,23 @@
+const int T;
+
+// What is the probability of infection eventually disappears?
+P=? [ F n=0 ]
+
+// What is the probability that the infection lasts for at least 100 times units and disappears within 120 time units?
+P=? [ n>0 U[100,120] n=0 ]
+
+// What is the probability that exists the path where the infection does not disappear in each point along this path until 100-time units?
+// Figure 5
+P=? [ G[0,100] n>0 ]
+
+// What is the probability that exists the path where the infection disappears at some point along this path, within maximally 120-time units?
+// Figure 3
+P=? [ F[0,120] n=0 ]
+
+// What is the probability that exists the path for the infection to spread even after 120-time units?
+// Figure 2 
+P=? [ F > 120 n>0 ]
+
+// What is the probability of infection eventually disappears?
+// Task 4
+P=? [F (z+u)=sum_individuals]

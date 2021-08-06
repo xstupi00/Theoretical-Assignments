@@ -1,0 +1,126 @@
+Array
+(
+    [name] => joe
+    [password] => password
+    [phone] => 369875254
+    [city] => Brno
+    [street] => Pekarska
+)
+Array
+(
+    [name] => lojza
+    [password] => namornik
+    [phone] => 787589636
+    [city] => Praha
+    [street] => Videnska
+)
+Array
+(
+    [name] => test
+    [password] => password1
+    [phone] => 78885254
+    [city] => Trebic
+    [street] => Komenskeho
+)
+Array
+(
+    [name] => SECRET
+    [password] => Tajemstvi:h_21-11-22-00-01_aa1a5c126400cd6a042fb96e37d7f8313fc552eb0b9381f78d1a85178ed57595
+    [phone] => 
+    [city] => 
+    [street] => 
+)
+ 
+
+
+
+?
+list
+avail
+bucket 1
+dir
+export ./2020_dump
+status
+open ./2020_dump
+set
+version
+status
+reorganize
+first
+?
+avail
+exit
+quit
+?
+avail
+avail
+exit
+quit
+;s
+ls
+status
+import ./2020_dump
+list
+open ./2020_dump
+exit
+quit
+open /tmp/asd
+exit
+quit
+avail
+quit
+avail
+exit
+ls
+quit
+open reader
+status
+open secret_db.gdbm
+exit
+exit
+q
+open
+exit
+q
+status
+avail
+quit
+open secret_db.gdbm
+list
+fetch Secret
+quit
+open /tmp/secret_db.gdbm
+list
+quit
+list
+avail
+open
+open /tmp/secret_db.gdbm
+list
+quit
+open junk.gdbm
+list
+fetch Secret
+quit
+open /tmp/test.gdbm
+list
+quit
+open junk.gdbm
+list
+fetch Secret
+fetch Tajemstvi
+open secret_db.gdbm
+ls
+avail
+fetch Secret
+open ./2020_dump
+ls
+quit
+help
+open 2020_dump
+fetch Tajemstvi
+fetch Secret
+fetch tajemstvi
+nextkey
+quit
+
