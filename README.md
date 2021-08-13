@@ -1,5 +1,5 @@
 # Theoretical Assignments 
-## Fineshed projects from the following subjects:
+## Finished projects from the following subjects:
 
 - Theoretical Computer Science
 - Statistics and Probability
